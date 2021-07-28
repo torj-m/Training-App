@@ -1,0 +1,18 @@
+<section>
+    <a routerLink="/addformateur"> <img src='../../../assets/Ajouter.png' width="40px"></a>
+    <mat-list>
+        <h2>Liste Des Participants</h2>
+
+
+
+
+        <mat-list-item *ngFor="let participan of participantItems">
+            <div>
+                {{participan.nom}} {{participan.prenom}} {{participan.Adresse}} {{participan.Email}}
+                <img src="../../assets/update.png" class="iconsup" />
+                <a (click)="onDelete()"> <img src="../../assets/delete.png" class="icon" /></a>
+            </div>
+        </mat-list-item>
+
+    </mat-list>
+</section>
